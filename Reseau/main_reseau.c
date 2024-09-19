@@ -2,7 +2,10 @@
 int main()
 {
     char* ip = NULL;
+    char* netmask = NULL;
     ip = getdata(ip); 
-    verification(ip);
+    netmask = getdata_2(netmask);
+    verification(ip,netmask);
+    free_all_array(ip,netmask);
     return 0;
 }
